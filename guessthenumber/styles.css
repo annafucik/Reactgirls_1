@@ -1,0 +1,41 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: #1B1464;
+    color: #FFFFFF;
+}
+/* Nadpis */
+h1{
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-family: "Tomorrow", Arial, sans-serif;  
+  text-align: center;
+  margin: 102px 0;
+}
+
+/* Boxíky */
+div{
+    background-color: #FFFFFF;
+    color: #1B1464;
+}
+.how-to-play, .secret-number{
+    width: 624px;
+    height: 416px;
+}
+
+.number{
+    width: 1440px;
+    height: 253px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin: 0 64px;
+}
