@@ -82,6 +82,7 @@ transform: translate(-50%, -50%);
 background-color: transparent;
 }
 
+/* myslím si, že tady (níže) nebude fixed, protože se to pak nehýbe v rámci stánky - maybe si s tím pohrát a zkusit nakonfigurovat position: absolute */
 .number{
     width: 100%;
     height: 253px;
