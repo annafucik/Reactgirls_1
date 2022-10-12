@@ -25,17 +25,22 @@
 
     <div class="secret-number">
         <h2>SECRET NUMBER</h2>
-        <span>0</span>
-        <span><</span>
-        <img src="Star.svg" alt="star">
-        <span><</span>
-        <span>100</span>
+       <div>
+            <span id="left-number">0</span>
+            <span><</span>
+            <div id="star">
+                <img src="Star.svg" alt="star">
+                <div>?</div>
+            </div>    
+            <span><</span>
+            <span id="right-number">100</span>
+        </div>
     </div>
 </main>
 
 <div class="number">
     <label for="number-input">Number between 0 and 100:</label>
-    <input id="number-input" type="number" min="1" max="99">
+    <input id="number-input" type="number" min="1" max="99" placeholder="55">
     <button>GUESS</button>
 </div>
 

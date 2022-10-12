@@ -1,6 +1,9 @@
 * {
 margin: 0;
 padding: 0;
+box-sizing: border-box;
+border: none;
+font-family: "Tomorrow";
 }
 
 body{
@@ -19,6 +22,13 @@ h1{
 }
 
 /* Boxíky */
+main{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin: 0 64px;
+}
+
 div{
     background-color: #FFFFFF;
     color: #1B1464;
@@ -26,16 +36,84 @@ div{
 .how-to-play, .secret-number{
     width: 624px;
     height: 416px;
+    padding-top: 96px;
+    font-family: "Tomorrow";
+    text-align: center;
+}
+
+h2, label {
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 800px;
+}
+
+.how-to-play li{
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.secret-number > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.secret-number > div > div{
+line-height: 130%;
+font-size: 48px;
+}
+
+#left-number, #right-number{
+    width: 100px;
+}
+
+#star{
+   position: relative;
+}
+
+#star > div{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
 }
 
 .number{
-    width: 1440px;
+    width: 100%;
     height: 253px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    gap: 64px;
-    margin: 0 64px;
+#number-input{
+   width: 200px;
+   height: 82px; 
+   background: #1B1464;
+   color: #FFFFFF;
+   font-size: 48px;
+   line-height: 130%;
+   text-align: center;
+   letter-spacing: 0.03em;
+   font-weight: 700;
+   font-family: "Tomorrow";
+}
+
+button{
+    width: 365px;
+    height: 82px;
+    background-color: #9C9C9C;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #1B1464;
 }
